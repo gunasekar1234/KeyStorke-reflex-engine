@@ -1,0 +1,145 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.container {
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+.card {
+width: 100%;
+max-width: 700px;
+background: rgba(255, 255, 255, 0.08);
+border-radius: 20px;
+padding: 30px;
+backdrop-filter: blur(10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+h1,
+h2 {
+text-align: center;
+margin-bottom: 25px;
+}
+.setup-section {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+textarea {
+width: 100%;
+border: none;
+border-radius: 10px;
+padding: 15px;
+font-size: 16px;
+resize: none;
+}
+button {
+padding: 14px;
+border: none;
+border-radius: 10px;
+background: #3b82f6;
+color: white;
+font-size: 16px;
+cursor: pointer;
+transition: 0.2s;
+}
+button:hover {
+transform: translateY(-2px);
+}
+.secondary {
+background: #64748b;
+}
+.game-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+}
+.top-bar {
+width: 100%;
+display: flex;
+justify-content: space-between;
+font-size: 18px;
+}
+.character-box {
+width: 180px;
+height: 180px;
+background: white;
+color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 80px;
+border-radius: 20px;
+font-weight: bold;
+}
+.instruction {
+font-size: 18px;
+text-align: center;
+}
+.message {
+font-size: 22px;
+font-weight: bold;
+height: 30px;
+}
+.results-section {
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+.result-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+.result-card {
+background: rgba(255, 255, 255, 0.08);
+border-radius: 15px;
+padding: 20px;
+text-align: center;
+}
+.result-card span {
+font-size: 14px;
+opacity: 0.8;
+}
+.result-card h3 {
+font-size: 40px;
+margin-top: 10px;
+}
+.button-group {
+display: flex;
+gap: 15px;
+}
+.button-group button {
+flex: 1;
+}
+@media (max-width: 600px) {
+.top-bar {
+flex-direction: column;
+gap: 10px;
+align-items: center;
+}
+.character-box {
+width: 140px;
+height: 140px;
+font-size: 60px;
+}
+.result-grid {
+grid-template-columns: 1fr;
+}
+.button-group {
+flex-direction: column;
+}
+}
